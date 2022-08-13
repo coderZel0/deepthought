@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./navbar.css" />
     <link rel="stylesheet" href="./style.css" />
     <script src="https://kit.fontawesome.com/95e20f590d.js" crossorigin="anonymous"></script>
     <title>DT</title>
@@ -16,23 +17,49 @@
             </div>
             <div class="nav_links flex_center space_between">
                 <div class="links flex_center space_around">
-                    <div class="home"><i class="fas fa-home"></i></div>
-                    <div class="setting"><i class="fas fa-tools"></i></div>
-                    <div class="notification"><i class="fas fa-bell"></i></div>
+                    <div class="icon home"><i class="fas fa-home"></i></div>
+                    <div class="icon setting"><i class="fas fa-tools"></i></div>
+                    <div class="icon notification"><i class="fas fa-bell"></i></div>
                 </div>
-                <div class="user_info flex_center space_around">User</div>
+                <div class="user_info flex_center space_around">
+                    <div class="avatar">
+                        
+                    </div>
+                    <i style="color: #3683F0;" class="fas fa-ellipsis-v"></i>
+                </div>
             </div>
         </div>
     </navbar>
     <div class="journey_board">
 
     </div>
-    <div class="task_container">
-        <div class="asset_container">
-            <div class="asset_heading"></div>
-            <div class="asset_description"></div>
-            <div class="arrow"></div>
+    <div class="task_container flex_center">
+        <div class="container_title"><span>You Are Taking Challenges of New Porject</span></div>
+        <div class="task_container_inner ">
+            <div class="title_inner flex_center"><span>demo task</span></div>
+            <div class="tasks">
+                <div class="asset_container">
+                    <div class="asset_heading"></div>
+                    <div class="asset_description"></div>
+                    <div class="arrow"></div>
+                </div>
+                <div class="asset_container">
+                    <div class="asset_heading"></div>
+                    <div class="asset_description"></div>
+                    <div class="arrow"></div>
+                </div>
+                <div class="asset_container">
+                    <div class="asset_heading"></div>
+                    <div class="asset_description"></div>
+                    <div class="arrow"></div>
+                </div>
+            </div>
+            
         </div>
+        
+    </div>
+    <div class="next_button">
+        <div class="btn flex_center">Next</div>
     </div>
 <script src="./script.js"></script>
 </body>

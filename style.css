@@ -1,55 +1,91 @@
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 body{
-    background-color: rgb(231, 231, 26);
+height: 100vh;
 }
 
-.flex_center{
+.task_container{
+    width: 100%;
+    height: 100%;
+   flex-direction: column;
+   margin-top:calc(222px - 90px);
+}
+
+.container_title{
+    width:1136px ;
+    height:51px;
+    border-radius: 10px 10px 0px 0px;
+    background: #0029FF;
+    font-weight: 700;
     display: flex;
     align-items: center;
+    color: honeydew;
+}
+
+.container_title span{
+    margin-left:19px;
+}
+
+.task_container_inner{
+    display: flex;
+    width:1136px;
+    height:100%;
+    background-color: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.next_button{
+    width:100%;
+    margin-top: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.next_button .btn{
+    margin-right: 142px;
+    height: 50px;
+    width: 89px;
+    background: #0029FF;
+    border-radius: 5px;
+    color:#FFFFFF;
+    font-weight: 700;
+}
+
+
+
+/*asset container style*/
+.task_container_inner{
+    position: relative;
     justify-content: center;
 }
-
-.space_between{
-    justify-content: space-between;
+.title_inner{
+    position: absolute;
+    top:44px;
 }
-
-.space_around{
-    justify-content: space-around;
-}
-
-.navbar{
-    width:100%;
-    height:90px;
-    background: #F0F0F0;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.tasks{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-}
-
-.navbar .logo{
+    justify-content: center;
+    background-color: rebeccapurple;
     position: absolute;
-    left:80px;
+    width: 100%;
+    flex-wrap: wrap;
+    top:130px;
 }
 
-.navbar .nav_links{
-    position: absolute;
-    right:46px;
-    width:240px;
-    height:100%;
-    background-color: chartreuse;
+.asset_container{
+    width: 458px;
+    height: 282px;
+    min-height: 282px;
+    background-color: #0029FF;
+    border-radius: 8px;
+    margin:13px 24px;
 }
 
-.links{
-    width:50%;
-}
+/*Media queries*/
 
-.user_info{
-    width:40%;
+@media screen and (max-width:666px){
+    .next_button{
+        justify-content: center;
+    }
 }
