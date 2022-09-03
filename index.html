@@ -31,20 +31,46 @@
         </div>
     </navbar>
     <div class="journey_board">
-
+        <div class="journey_board_inner">
+            <div style="color: white;width: 100%;height: 48px;background-color: rgb(15, 15, 15);border-radius: 0px 10px 0px 0px;" class="flex_center space_between journey_board_head">
+                <h4 style="flex: 2;text-align: end;">Journey board</h4>
+                <div style="flex: 1;" class="flex_center">
+                    <i onclick="showSidePanel()" class="fas fa-hamburger"></i>
+                </div>
+               
+            </div>
+            <div style="padding: 10px 16px;margin-top: 10px;" class="flex flex-col task_list_container">
+                <div style="width: 100%;" class="flex_center justify-end task_head">
+                    <strong style="padding:10px 25px;border-bottom: 1px solid gray;">1. demo task</strong>
+                    <div id="blue_box" style="width: 40px; height: 40px;border-radius: 10px;border:1px solid blue;color:blue" class="flex_center">1</div>
+                </div>
+                <div style="width: 80%;" class="task_list_container_inner flex justify-end">
+                    <ul id="list_container_ul">
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="task_container flex_center">
-        <div class="container_title"><span>You Are Taking Challenges of New Porject</span></div>
+        <div class="container_title"><span>You Are Taking Challenges of New Project</span></div>
         <div class="task_container_inner ">
             <div class="title_inner flex_center"><span>demo task</span></div>
             <div class="tasks">
                 <div class="asset_container">
                     <div class="asset_heading flex_center">asset heading</div>
-                    <div class="main_content">
+                    <div class="main_content flex_center">
+                        <!--Start-->
                         
+                        <!--end-->
                     </div>
                     <div class="asset_description"></div>
-                    <div class="arrow"></div>
+                    <div class="arrow">
+                        <div style="height:15px;width:15px;background:black;border-radius: 50%;">
+                            <i style="fill:white;color:white" class="fas fa-chevron-down"></i>
+                        </div>
+                       
+                    </div>
                 </div>
                
             </div>

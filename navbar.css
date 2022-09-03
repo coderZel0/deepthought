@@ -4,14 +4,30 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: rgb(231, 231, 26);
+ 
+
+
+.flex{
+    display: flex;
 }
 
 .flex_center{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.justify-end{
+    justify-content: end;
+}
+.justify-start{
+    justify-content: start;
+}
+.items-center{
+    align-items: center;
+}
+.flex-col{
+    flex-direction: column;
 }
 
 .space_between{
@@ -76,4 +92,11 @@ body{
 
 .user_info{
     width:30%;
+}
+
+
+@media screen and (max-width:720px){
+    .links{
+        visibility: hidden;
+    }
 }
